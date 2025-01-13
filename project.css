@@ -1,0 +1,54 @@
+body {
+  background-color: black;
+  margin: 0px;
+}
+body .container {
+  height: 100vh;
+  background-color: rgba(27, 25, 25, 0.699);
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: repeat(5, 1fr);
+  gap: 40px 40px;
+}
+body .container div {
+  padding: 15px;
+}
+body .container .form {
+  grid-column: 2/span 3;
+  grid-row: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+body .container .form .y {
+  font-size: 25px;
+  padding-left: 30px;
+}
+body .container .form #x {
+  display: flex;
+  justify-content: center;
+}
+body .container .form #x .sub {
+  width: 200px;
+}
+body .container .form input {
+  height: 65px;
+  width: 580px;
+  border-radius: 30px;
+  margin: 5px;
+}
+body .container .link {
+  grid-column: 5;
+  background: rgba(66, 60, 92, 0.4);
+  position: absolute;
+  border-radius: 20px;
+  right: 0px;
+  padding: 30px;
+  margin: 5px;
+  font-weight: bold;
+}
+body .container .link a {
+  color: rgb(255, 255, 255);
+  margin: 10px;
+}/*# sourceMappingURL=project.css.map */

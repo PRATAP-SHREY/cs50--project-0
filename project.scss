@@ -1,0 +1,71 @@
+body{
+    background-color: black;
+    margin: 0px;
+
+    .container{
+        height: 100vh;
+        background-color: rgba(27, 25, 25, 0.699);
+        display: grid;
+        grid-template-columns:auto auto auto auto auto;
+        grid-template-rows:repeat(5, 1fr);
+        gap: 40px 40px;
+
+        div{
+            padding: 15px;
+        }
+
+        .form {
+
+
+            grid-column: 2 / span 3;
+            grid-row: 3;
+
+
+            display: flex;
+            // flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin:10px;
+
+            .y{
+                font-size: 25px;
+                padding-left: 30px;
+            }
+            
+            #x{
+                display: flex;
+                justify-content: center;
+                .sub{
+                    width: 200px;
+                }
+            }
+                    
+            input{
+                height: 65px;
+                width: 580px;
+                border-radius: 30px;
+                margin: 5px;
+            }
+                        
+        }
+
+        .link {
+            
+            grid-column: 5;
+
+
+            background: rgba($color: #423c5c71, $alpha: 0.4) ;
+            position: absolute;
+            border-radius: 20px;
+            right: 0px;
+            padding: 30px;
+            margin: 5px;
+            font-weight: bold;
+
+            a{
+                color: rgb(255, 255, 255);
+                margin: 10px;
+            }
+        }
+    }
+}
